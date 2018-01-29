@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Open_Sans;
+}
+@font-face{
+    font-family: "Open_Sans";
+    src : url('fonts/OpenSans-Regular.TTF');
+}
+/*<----------------->Accessorise<----------------->*/
+.under-hide{
+    width: 0;
+    height: 2px;
+    background: #E70000;
+    transition: .2s
+}
+/*<----------------->Navigation<----------------->*/
+.nav-fix{
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    z-index: 999;
+    float: left;
+    text-align: center;
+}
+.nav-brand{
+    width: 200px;
+    font-size: 25;
+    height: 100%;
+    display: flex;
+    float: left;
+    color: white;
+    transition: .2s;
+    margin-left: 10px;
+}
+.navigation, .show{
+    float: right;
+    height: 100%;
+}
+.show{display: none;}
+.nav, .menu{
+    float: right;
+    height: 100%;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    color: white;
+/*    border-bottom: medium solid #E70000;*/
+}
+.nav a{
+    width: 100%;
+    color: white;
+    text-decoration: none;
+}
+/*<----------------->Menu<----------------->*/
+.menu-cont{
+    float: left;
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+}
+/*<----------------->Header<----------------->*/
+.header{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.back{
+    width: 100%;
+    height: 100%;
+    background: url(../img/Desk-Background-3E5.jpg) no-repeat center;
+    background-size: cover;
+/*    position: absoute;*/
+}
+.dark{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.15);
+    padding-top: 5vh;
+}
+.intro{
+    width: 70%;
+    padding: 2% 5% 2% 5%;
+    margin: 35vh 0 0 10px;
+    color: black;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.65);
+    border-bottom: medium solid #E70000;   
+}
+.intro-1{
+    width: ;
+    font-size: 35;
+}
+.intro-2{
+    margin-top: 10px
+}
+/*<----------------->Developer<----------------->*/
+.dev{
+    width: 100%;
+    height: auto;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    float: left;
+}
+.cont-sec{
+    float: left;
+    width: 100%;
+    height: auto;
+}
+.div-sec{
+    float: left;
+    width: 33.33%;
+}
+.sec{
+    margin: auto;
+    width: 300px;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+}
+.sec-titl{
+    height: 30px;
+    font-size: 20;
+    border-left: thin solid #E70000;
+    padding-left: 20px;
+}
+.cir-img{
+    width: 150px;
+    height: 170px;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 20px
+}
+.sec img{
+    width: 100%;
+    height: 100%;
+}
+.sec-text{
+    width: 80%;
+    height: 90%;
+    padding: 5% 10% 5% 10%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.75);
+    transition: .3s;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+}
+.sec-text:hover{
+    transform: translateY(-200px);
+    cursor: pointer;
+}
+.dev-titl{
+    float: left;
+    width: 50%;
+    font-size: 30;
+    margin: 30px 25% 0 25%;
+    border-right: medium solid #E70000;
+}
+/*<----------------->Question<----------------->*/
+.ques{
+    width: 100%;
+    height: auto;
+    background: #f7f7f7;
+    float: left;
+    box-shadow: 0 -2px 2px lightgray;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.input-name{
+    width: 80%;
+    height: 120px;
+    margin: auto;
+    margin-top: 20px
+}
+.name-titl{
+    width: 250px;
+    height: 45px;
+    border-left: medium solid #E70000;
+    padding-left: 50px;
+    font-size: 30
+}
+.name{
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+}
+.name input[type=text]{
+    width: 98%;
+    height: 100%;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    padding-left: 2%;
+    font-size: 25;
+}
+.name input:focus{
+    filter: drop-shadow(2px 1px 1px #E70000);
+}
+.ques-wrap{
+    width: 90%;
+    height: auto;
+    margin: auto;
+    float: left;
+    margin-left: 5%;
+}
+.ques-group{
+    width: 100%;
+    height: auto;
+    float: left;
+    margin-top: 30px;
+}   
+.number{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-right: thick solid #E70000;
+    border-bottom: thin solid #E70000;
+    font-weight: bold;
+    color: #E70000;
+    margin-bottom: 10px;
+    float: left;
+}
+.ques-q{width: 100%;text-align: center; margin-bottom: 10px;font-weight: bold;font-size: 20;float: left}
+.answer-group{width: 100%;float: left}
+.answer-group input{visibility: hidden;display: none;}
+/*<----------------->Question<----------------->*/
+.out{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    border: medium solid #888888;
+    margin: auto;
+}
+.in{
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    border: 4px solid #f7f7f7;
+}
+.answer-group input[type=radio]:checked ~ .label .out{
+    border: medium solid #E70000
+}
+.answer-group input[type=radio]:checked ~  .label .out .in{
+    background: #E70000
+}
+.answer-group input[type=radio]:checked ~ .label{
+    color: #E70000
+}
+.label{margin-left: 20px;color: #888888;}
+.label:hover{cursor: pointer; color: #e75757;}
+.label:hover .out{border: medium solid #e75757;}
+.out:hover{border: medium solid #e75757;}
+.out:hover .label{color: #e75757;}
+.answer{
+    width: 24%;
+    float: left;
+    text-align: center;
+    margin: 30px 0.5% 0 0.5%;
+}
+
+/*<----------------->Footer<----------------->*/
+.footer{
+    float: left;
+    width: 100%;
+    height: 250px;
+    background: #1f1f1f;
+}
+.foot-left{
+    float: left;
+    width: 300px;
+    height: 100%;
+}
+.foot-right{
+    float: right;
+    height: 100%;
+}
